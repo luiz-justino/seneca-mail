@@ -1,6 +1,3 @@
-![Seneca](http://senecajs.org/files/assets/seneca-logo.png)
-> A [Seneca.js][] plugin
-
 # @seneca/mail
 
 | ![Voxgig](https://www.voxgig.com/res/img/vgt01r.png) | This open source module is sponsored and supported by [Voxgig](https://www.voxgig.com). |
@@ -15,8 +12,11 @@ npm install @seneca/mail
 ## Quick Example
 
 ```js
-require('seneca')()
-  .use('@seneca/mail', { transport: { host: 'smtp.example.com' } })
+seneca.use('mail', {
+  email: {
+    send: true,
+  }
+})
 ```
 
 ## More Examples
@@ -35,16 +35,6 @@ If you're using this module and need help, you can:
 - Tweet to [@senecajs][]
 
 ## API
-
-### Action Patterns
-
-* [sys:mail,hook:render](#-sysmailhookrender-)
-* [sys:mail,send:mail](#-sysmailsendmail-)
-
-
-<!--END:action-list-->
-
-<!--START:action-desc-->
 
 ### Options
 
@@ -81,6 +71,36 @@ seneca.use('mail', { name: value, ... })
 
 
 <!--START:action-list-->
+
+### Action Patterns
+
+* [sys:mail,hook:render](#-sysmailhookrender-)
+* [sys:mail,send:mail](#-sysmailsendmail-)
+
+
+<!--END:action-list-->
+
+<!--START:action-desc-->
+
+### Action Descriptions
+
+### &laquo; `sys:mail,hook:render` &raquo;
+
+No description provided.
+
+
+
+----------
+### &laquo; `sys:mail,send:mail` &raquo;
+
+No description provided.
+
+
+
+----------
+
+
+<!--END:action-desc-->
 
 ## Contributing
 
