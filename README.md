@@ -1,26 +1,52 @@
+![Seneca](http://senecajs.org/files/assets/seneca-logo.png)
+> A [Seneca.js][] plugin
+
 # @seneca/mail
-
-
-Send emails with templates.
-
-
-[![Build Status](https://travis-ci.org/senecajs/seneca-mail.svg?branch=master)](https://travis-ci.org/senecajs/seneca-mail)
-[![Coverage Status](https://coveralls.io/repos/github/senecajs/seneca-mail/badge.svg?branch=master)](https://coveralls.io/github/senecajs/seneca-mail?branch=master)
-<a href="https://codeclimate.com/github/senecajs/seneca-mail/maintainability"><img src="https://api.codeclimate.com/v1/badges/70f83e6658979f229707/maintainability" /></a>
-[![DeepScan grade](https://deepscan.io/api/teams/5016/projects/12281/branches/187929/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=5016&pid=12281&bid=187929)
-[![dependencies Status](https://david-dm.org/senecajs/seneca-mail/status.svg)](https://david-dm.org/senecajs/seneca-mail)
 
 | ![Voxgig](https://www.voxgig.com/res/img/vgt01r.png) | This open source module is sponsored and supported by [Voxgig](https://www.voxgig.com). |
 |---|---|
 
-Updated plugin - WORK IN PROGRESS
+## Install
+
+```sh
+npm install @seneca/mail
+```
+
+## Quick Example
+
+```js
+require('seneca')()
+  .use('@seneca/mail', { transport: { host: 'smtp.example.com' } })
+```
+
+## More Examples
+
+See [test/](test/) for usage examples.
+
+## Motivation
+
+Send emails with templates from Seneca microservices.
+
+## Support
+
+If you're using this module and need help, you can:
+
+- Post a [github issue][]
+- Tweet to [@senecajs][]
+
+## API
+
+### Action Patterns
+
+* [sys:mail,hook:render](#-sysmailhookrender-)
+* [sys:mail,send:mail](#-sysmailsendmail-)
 
 
+<!--END:action-list-->
 
-<!--START:options-->
+<!--START:action-desc-->
 
-
-## Options
+### Options
 
 * `test` : boolean <i><small>false</small></i>
  : Test mode.
@@ -56,39 +82,21 @@ seneca.use('mail', { name: value, ... })
 
 <!--START:action-list-->
 
+## Contributing
 
-## Action Patterns
+The [Senecajs org][] encourages open participation. If you feel you can help in any way, be it with documentation, examples, extra testing, or new features please get in touch.
 
-* [sys:mail,hook:render](#-sysmailhookrender-)
-* [sys:mail,send:mail](#-sysmailsendmail-)
+### Running tests
 
+```sh
+npm run test
+```
 
-<!--END:action-list-->
+## Background
 
-<!--START:action-desc-->
+Supports multiple email transports via [nodemailer](https://nodemailer.com/).
 
-
-## Action Descriptions
-
-### &laquo; `sys:mail,hook:render` &raquo;
-
-No description provided.
-
-
-
-----------
-### &laquo; `sys:mail,send:mail` &raquo;
-
-No description provided.
-
-
-
-----------
-
-
-<!--END:action-desc-->
-
-
-
-
-
+[![Build Status](https://travis-ci.org/senecajs/seneca-mail.svg?branch=master)](https://travis-ci.org/senecajs/seneca-mail)
+[![Coverage Status](https://coveralls.io/repos/github/senecajs/seneca-mail/badge.svg?branch=master)](https://coveralls.io/github/senecajs/seneca-mail?branch=master)
+[![DeepScan grade](https://deepscan.io/api/teams/5016/projects/12281/branches/187929/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=5016&pid=12281&bid=187929)
+[![dependencies Status](https://david-dm.org/senecajs/seneca-mail/status.svg)](https://david-dm.org/senecajs/seneca-mail)
