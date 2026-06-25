@@ -1,5 +1,10 @@
 # @seneca/mail
 
+[![Build Status](https://travis-ci.org/senecajs/seneca-mail.svg?branch=master)](https://travis-ci.org/senecajs/seneca-mail)
+[![Coverage Status](https://coveralls.io/repos/github/senecajs/seneca-mail/badge.svg?branch=master)](https://coveralls.io/github/senecajs/seneca-mail?branch=master)
+[![DeepScan grade](https://deepscan.io/api/teams/5016/projects/12281/branches/187929/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=5016&pid=12281&bid=187929)
+[![dependencies Status](https://david-dm.org/senecajs/seneca-mail/status.svg)](https://david-dm.org/senecajs/seneca-mail)
+
 | ![Voxgig](https://www.voxgig.com/res/img/vgt01r.png) | This open source module is sponsored and supported by [Voxgig](https://www.voxgig.com). |
 |---|---|
 
@@ -13,9 +18,7 @@ npm install @seneca/mail
 
 ```js
 seneca.use('mail', {
-  email: {
-    send: true,
-  }
+  email: { send: true }
 })
 ```
 
