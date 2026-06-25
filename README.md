@@ -35,8 +35,10 @@ Send emails with templates from Seneca microservices.
 
 If you're using this module and need help, you can:
 
-- Post a [github issue][]
-- Tweet to [@senecajs][]
+- Post a [github issue](https://github.com/senecajs/seneca-mail/issues)
+- Tweet to [@senecajs](http://twitter.com/senecajs)
+- Ask on the [Gitter](https://gitter.im/senecajs/seneca)
+
 
 ## API
 
