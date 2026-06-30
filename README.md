@@ -13,7 +13,7 @@
 
 ```sh
 npm install @seneca/mail
-```
+```js
 
 ## Quick Example
 
@@ -21,7 +21,7 @@ npm install @seneca/mail
 seneca.use('mail', {
   email: { send: true }
 })
-```
+```js
 
 ## More Examples
 
@@ -62,7 +62,7 @@ Set plugin options when loading with:
 
 seneca.use('mail', { name: value, ... })
 
-```
+```js
 
 <small>Note: <code>foo.bar</code> in the list above means 
 <code>{ foo: { bar: ... } }</code></small> 
@@ -103,7 +103,7 @@ The [Senecajs org][] encourages open participation. If you feel you can help in 
 
 ```sh
 npm run test
-```
+```js
 
 ## Background
 
