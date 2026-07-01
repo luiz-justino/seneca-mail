@@ -11,18 +11,16 @@
 
 ## Install
 
-```sh
+```
 npm install @seneca/mail
-```js
-
+```
 ## Quick Example
 
-```js
+```
 seneca.use('mail', {
   email: { send: true }
 })
-```js
-
+```
 ## More Examples
 
 See [test/](test/) for usage examples.
@@ -58,12 +56,10 @@ If you're using this module and need help, you can:
  : Preview email.
 
 Set plugin options when loading with:
-```js
-
+```
 seneca.use('mail', { name: value, ... })
 
-```js
-
+```
 <small>Note: <code>foo.bar</code> in the list above means 
 <code>{ foo: { bar: ... } }</code></small> 
 
@@ -101,10 +97,9 @@ The [Senecajs org][] encourages open participation. If you feel you can help in 
 
 ### Running tests
 
-```sh
+```
 npm run test
-```js
-
+```
 ## Background
 
 Supports multiple email transports via [nodemailer](https://nodemailer.com/).
